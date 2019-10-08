@@ -44,6 +44,23 @@
          };
          button1.appendChild(butntext1);
          document.body.append(button1);
-     </script> 
+     </script>
+     <br>
+     Третье задание
+     <script>
+         let button2=document.createElement("button");
+         let btntext2=document.createTextNode("Выполнить скрипт");
+         button2.onclick=function()
+         {
+            let a=[];
+            for(let i=2;i<=100;i++){
+                if(i%3==1&&i%17==1)
+                    a.push(i);
+            }
+            alert(a);
+         };
+         button2.appendChild(btntext2);
+         document.body.append(button2);
+        </script> 
     </body>
 </html>
