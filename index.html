@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Золотухин Максим ЕТ-313</title>
+    </head>
+    <body>
+     Первое задание
+     <br>
+     <script>
+      let text1=document.createElement("input");
+      let text2=document.createElement("input");
+      let button=document.createElement("button");
+      let btntext=document.createTextNode("Сравнить");
+      let number=((Math.random()*100)+10);
+      text1.maxLength=number;
+      text2.maxLength=number/3;
+      button.onclick=function(){
+            if(text1.value.indexOf(text2.value)!=-1)
+            {
+                alert("Совпадение строки в индексе "+text1.value.indexOf(text2.value));
+            }
+            else
+            alert("Совпадения нету");
+      };
+      document.body.append(text1);
+      document.body.append(text2);
+      button.appendChild(btntext);
+      document.body.append(button);
+     </script>
+     <br>
+     Второе задание
+     <script>
+         let button1=document.createElement("button");
+         let butntext1=document.createTextNode("Выполнить скрипт");
+         button1.onclick=function(){
+            for(;;){
+            let a=prompt("Введите число от 15 до 90","");
+            let b=prompt("Введите текст размером больше 10","");
+            if(a>=15&&a<=90&&b.length>10)
+                {
+                break;
+                }
+            }
+         };
+         button1.appendChild(butntext1);
+         document.body.append(button1);
+     </script> 
+    </body>
+</html>
